@@ -22,6 +22,8 @@ USE_AZURE = False
 NUM_TOPICS_TO_EXTRACT = 2
 # Number of relevant papers to download and summarize (max)
 NUM_PAPERS_TO_DOWNLOAD = 3
+# Initial pdf file with complete path
+PDF_PAPER_PATH = ''    
 # --------------------------------------------------------------------------
 
 
@@ -343,7 +345,7 @@ app = workflow.compile()
 # --- EXECUTION ---
 
 if __name__ == "__main__":
-    initial_pdf_path = "10.26434_chemrxiv-2025-5qdpp.pdf"
+    initial_pdf_path = PDF_PAPER_PATH
     
     initial_state = {
         "messages": [], "initial_pdf_path": initial_pdf_path,
