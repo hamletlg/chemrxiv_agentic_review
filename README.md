@@ -1,7 +1,7 @@
 # chemrxiv_agentic_review
 OVERVIEW
 --------------------------------------
-This project demonstrates a sophisticated, multi-step agentic system built with LangChain and LangGraph. The agentic system primary goal is to autonomously create a literature review report based on search results in ChemrXiv API endpoints, from the metadata of a scientific paper (in PDF format).
+This project demonstrates a sophisticated, multi-step agentic system built with LangChain and LangGraph. The agentic system primary goal is to autonomously create a literature review report based on search results in ChemrXiv API endpoints, from the metadata of a scientific paper (in PDF format). Right now limited in scope to Chemistry and ChemrXiv, the  preprints platform in chemistry and related areas.
 
 The system is designed to be environment-agnostic, capable of running with a local Large Language Model (LLM) for development and testing, or seamlessly switching to a managed model endpoint on Azure AI Foundry for a scalable, cloud-native demonstration.
 
@@ -12,7 +12,7 @@ CORE FUNCTIONALITIES
 --------------------------------------
 The agent executes the following workflow autonomously:
 
-1.  **Initial Analysis**: Ingests a starting PDF and extracts the text from its first page to understand the core topic.
+1.  **Initial Analysis**: Ingests a starting PDF on Chemistry and extracts the text from its first page to understand the core topic.
 
 2.  **Topic Extraction**: Uses an LLM to identify the most important key terms or topics from the initial text.
 
